@@ -8,8 +8,8 @@ nums1 has a length of m + n, where the first m elements denote the elements that
  should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n */
 
 void main() {
-  List<int> nums1 = [1, 2, 3, 0, 0, 0];
-  int m = 3;
+  List<int> nums1 = [1, 2, 3, 0, 0, 0,0,5,7];
+  int m = 6;
   List<int> num2 = [2, 5, 6];
   int n = 3;
   print(mergeSortedArrays(nums1, num2, m, n));
@@ -25,7 +25,7 @@ mergeSortedArrays(List<int> num1, List<int> num2, int m, int n) {
 // comparing element
 //why while loop because we want to iterate both num1 and num2
   while (i >= 0 && j >= 0) {
-    print(num1[i]);
+    print("----->{num1[i]}");
     if (num1[i] >= num2[j]) {
       num1[k] = num1[i];
       i--;
